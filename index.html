@@ -24,6 +24,58 @@
 			</div>
 		</div>	
 	</section>
+	<nav id="sideNav">
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">About us</a></li>
+			<li><a href="">Feartures</a></li>
+			<li><a href="">Courses</a></li>
+			<li><a href="">Offer</a></li>
+			<li><a href="">Contact</a></li>
+		</ul>
+	</nav>
+	<img src="images/menu.png" id="menubtn" alt="">
+	<section id="about">
+		<div class="about-left-col">
+			<img src="images/about.png" alt="">
+		</div>
+		<div class="about-right-col">
+			<div class="about-text">
+				<h1>About Us</h1>
+				<span class="square"></span>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem mollitia nisi dolores consequatur dolor eos nostrum, ipsum quos sint unde fuga modi earum quae accusamus suscipit, minima ullam neque delectus?</p>
+				<br>
+				<div class="line">
+					<span class="line-1"></span><br>
+					<span class="line-2"></span>
+					<br>
+					<span class="line-3"></span>
+				</div>
+				<br>
+				<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis accusantium asperiores ad veniam eveniet
+				
+				</h2>
+				<h3>--Mahfujur</h3>
+
+			</div>
+			
+		</div>
+		
+	</section>
+	<script type="text/javascript">
+		  var menuBtn =document.getElementById("menubtn");
+		  var sideNav =document.getElementById("sideNav");
+		  sideNav.style.right="-255px";
+		  menubtn.onclick =function(){
+		  	if (sideNav.style.right=="-255px") {
+		  		sideNav.style.right="0px";
+
+		  	}else{
+		  		sideNav.style.right="-255px";
+
+		  	}
+		  }
+	</script>
 	
 </body>
 </html>
