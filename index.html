@@ -6,9 +6,11 @@
 
 	<title>Responsive Website</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
 </head>
 <body>
-<section class="header">
+<section class="header" id="head">
 	<div class="container">
 		<img src="images/logo.png" class="logo">
 		<div class="header-text">
@@ -28,12 +30,12 @@
 </section>
 <nav id="sideNav">
 	<ul>
-		<li><a href="">Home</a></li>
-		<li><a href="">About us</a></li>
-		<li><a href="">Feartures</a></li>
-		<li><a href="">Courses</a></li>
-		<li><a href="">Offer</a></li>
-		<li><a href="">Contact</a></li>
+		<li><a href="#head">Home</a></li>
+		<li><a href="#about">About us</a></li>
+		<li><a href="#feature">Feartures</a></li>
+		<li><a href="#course">Courses</a></li>
+		<li><a href="#offer">Offer</a></li>
+		<li><a href="#cont">Contact</a></li>
 	</ul>
 </nav>
 	<img src="images/menu.png" id="menubtn" alt="">
@@ -64,7 +66,7 @@
 	</div>
 	
 </section>
-<div class="features">
+<div class="features" id="feature">
 	<div class="feature-row">
 		<div class="feature-col">
 			<img src="images/pic-1.png" alt="">
@@ -93,7 +95,7 @@
 
 	</div>
 </div>
-<div class="courses">
+<div class="courses" id="course">
 	<div class="container course-row">
 		<div class="couse-left-col">
 			<div class="course-text">
@@ -147,7 +149,7 @@
 	</div>
 	
 </section>
-<section class="contact">
+<section class="contact" id="cont">
 	<div class="container contact-row">
 		<div class="contact-left-col">
 			<h1>Sing Up to Join Our <br>
@@ -244,6 +246,7 @@
 
 			}
 		}
+		var scroll = new SmoothScroll('a[href*="#"]');
 	</script>
 
 </body>
