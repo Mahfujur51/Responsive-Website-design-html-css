@@ -158,8 +158,8 @@ nav ul li{
 	margin: 50px 20px;
 }
 nav ul li a{
-    color: white;
-    font-weight: bold;
+	color: white;
+	font-weight: bold;
 	text-decoration: none;
 }
 #menubtn{
@@ -234,4 +234,65 @@ form input{
 }
 .contact-left-col h1{
 	margin-bottom: 10px;
+}
+.footer-row{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.footer-left-col{
+	flex-basis: 50%;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+.footer-right-col{
+	flex-basis: 35%;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+.footer-links{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.footer-info{
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+}
+.social-icon{
+	width: 50px;
+	position: fixed;
+	top: 50%;
+	left: 0;
+	z-index: 1;
+	transform: translateY(-50%);
+}
+.footer-logo img{
+	width: 100px;
+}
+.footer-logo button{
+	padding: 12px 38px;
+	margin-top: 20px;
+	font-size: 10px;
+}
+.copyright-text,.footer-logo{
+	flex-basis: 40%;
+}
+.link-title h4{
+	color: #fab3c4;
+	margin-bottom:20px;
+}
+.link-title small{
+	font-size: 13px;
+	color: #777;
+}
+.social-icon img{
+	display: block;
+	width: 20px;
+	margin:0 auto 20px;
+	cursor: pointer;
 }
